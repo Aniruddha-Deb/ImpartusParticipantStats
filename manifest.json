@@ -1,14 +1,10 @@
 {
-	"name": "Moodle Sidebar Plugin",
+	"name": "Impartus Participant Stats",
 	"version": "1.0",
-	"description": "Changes Moodle Sidebar Content",
+	"description": "Gives number of students in impartus class",
 	"content_scripts": [ {
 		"matches": [
-			"https://moodle.iitd.ac.in/my/", 
-			"https://moodle.iitd.ac.in/course/*",
-			"https://moodle.iitd.ac.in/mod/*",
-			"https://moodle.iitd.ac.in/grade/*",
-			"https://moodle.iitd.ac.in/user/*"
+			"https://a.impartus.com/vc/#/in/ttid/*" 
 		],
 		"run_at": "document_idle",
 		"js": ["plugin.js"]
