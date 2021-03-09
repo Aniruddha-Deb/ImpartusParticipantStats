@@ -3,10 +3,8 @@
 	"version": "1.0",
 	"description": "Gives number of students in impartus class",
 	"content_scripts": [ {
-		"matches": [
-			"https://a.impartus.com/vc/#/in/ttid/*" 
-		],
-		"run_at": "document_idle",
+		"matches": ["https://a.impartus.com/vc/*"],
+		"run_at": "document_end",
 		"js": ["plugin.js"]
 	} ],
 	"icons": {
