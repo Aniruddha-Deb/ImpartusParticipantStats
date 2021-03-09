@@ -5,7 +5,7 @@
 	"content_scripts": [ {
 		"matches": ["https://a.impartus.com/vc/*"],
 		"run_at": "document_end",
-		"js": ["plugin.js"]
+		"js": ["jquery.min.js", "plugin.js"]
 	} ],
 	"icons": {
 		"36": "icons/icon36.png",
